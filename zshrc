@@ -37,3 +37,14 @@ export PATH="$PATH:/Users/tomsc/.local/bin"
 
 # dbt aliases
 alias dbtf=/Users/tomsc/.local/bin/dbt
+
+help() {
+  cat <<EOF
+Available Commands:
+  asp <profile>       - switch AWS profile
+  asp <profile> login - switch AWS profile and SSO login
+  kubeoff             - remove the kube prompt
+  kubeon              - add the kube prompt
+  seq 1 100 | pbcopy  - copy numbers 1-100 to clipboard
+EOF
+}
